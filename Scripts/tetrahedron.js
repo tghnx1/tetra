@@ -56,7 +56,7 @@ for (const face of faces) {
         positions.push(vertices[idx].x, vertices[idx].y, vertices[idx].z);
     }
 }
-geometry.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3));
+geometry.setAttribute('position', new THREE.Float32BufferAttribute(positions, 4));
 geometry.computeVertexNormals();
 
 // Use a single color or texture material
