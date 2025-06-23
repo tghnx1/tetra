@@ -1,0 +1,30 @@
+@keyframes blink {
+    0%, 100% {
+        opacity: 1; /* Fully visible */
+    }
+    50% {
+        opacity: 0.5; /* Semi-transparent */
+    }
+}
+
+@media (min-width: 769px) {
+    #play-button {
+        display: none; /* Hides the button */
+    }
+}
+
+@media (max-width: 796px) {
+
+    #play-button
+    {
+        z-index: 10;
+        background: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+        color: black; /* Set text color to black */
+        animation: blink 1s infinite; /* Apply the blink animation */
+        border: none; /* Optional: Remove border */
+        padding: 10px 20px; /* Optional: Add padding for better touch area */
+        font-size: 16px; /* Optional: Adjust font size */
+        font-weight: bold; /* Optional: Make text bold */
+        text-align: center; /* Center-align the text */
+    }
+}

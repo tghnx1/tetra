@@ -1,0 +1,9 @@
+/* reset.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    overflow: auto;
+    /*overflow: hidden; /* Prevent scrolling on the landing page */
+}
