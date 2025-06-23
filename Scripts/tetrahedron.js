@@ -4,10 +4,10 @@ import { scene } from './scene.js';
 // Load textures
 const loader = new THREE.TextureLoader();
 const textures = [
-    loader.load('../Media/White.png'),
-    loader.load('../Media/White.png'),
-    loader.load('../Media/White.png'),
-    loader.load('../Media/White.png'),
+    loader.load('./Media/White.png'),
+    loader.load('./Media/White.png'),
+    loader.load('./Media/White.png'),
+    loader.load('./Media/White.png'),
 ];
 
 // Create materials
@@ -16,13 +16,10 @@ const materials = textures.map(tex => new THREE.MeshPhongMaterial({ map: tex, fl
 
 // Edge length
 const a = 2;
-
 // Height from base to top vertex
 const h = Math.sqrt(2 / 3) * a;
-
 // Height of the base triangle
 const baseHeight = Math.sqrt(3) / 2 * a;
-
 // Vertices: base in XZ-plane, top above centroid
 const vertices = [
     new THREE.Vector3(0, h / 2, 0), // Top vertex (centered above base)
