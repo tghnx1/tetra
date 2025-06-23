@@ -87,6 +87,7 @@ function adjustCubeScale() {
     }
 }
 
+
 // Adjust tetrahedron scale on window resize and load
 window.addEventListener('resize', adjustCubeScale);
 window.addEventListener('load', adjustCubeScale);
