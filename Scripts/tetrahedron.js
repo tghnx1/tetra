@@ -21,9 +21,10 @@ textures.forEach(texture => {
     texture.magFilter = THREE.NearestFilter;
 });
 
-// Define an array of materials, one for each face
-const materials = textures.map(texture => new THREE.MeshPhongMaterial({ map: texture }));
 */
+
+// Use a single color or texture material
+const material = new THREE.MeshPhongMaterial({ color: 0x00ffcc, flatShading: true });
 // Define the geometry for the tetrahedron
 const geometry = new THREE.TetrahedronGeometry(4); // Cube dimensions (4x4x4)
 
