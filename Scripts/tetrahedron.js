@@ -56,7 +56,7 @@ for (const face of faces) {
         positions.push(vertices[idx].x, vertices[idx].y, vertices[idx].z);
     }
 }
-geometry.setAttribute('position', new THREE.Float32BufferAttribute(positions, 4));
+geometry.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3));
 geometry.computeVertexNormals();
 
 // Use a single color or texture material
@@ -71,7 +71,7 @@ tetrahedron.rotation.x = Math.PI / 6; // 45 degrees around the X-axis
 
 // Set the tetrahedron position to the center
 tetrahedron.position.set(0, 0, 0);
-
+tetrahedron.scale.set(2, 2, 2); // Makes the tetrahedron 2x larger
 // Add the tetrahedron to the scene
 scene.add(tetrahedron);
 
@@ -81,9 +81,6 @@ function adjustCubeScale() {
     if (window.innerWidth <= 980) { // Mobile screen size
         console.log('Mobile screen detected, scaling down the tetrahedron');
         tetrahedron.scale.set(0.5, 0.5, 0.5); // Scale down the tetrahedron
-    } else {
-        console.log('Larger screen detected, resetting tetrahedron scale');
-        tetrahedron.scale.set(2, 2, 2); // Default scale
     }
 }
 
