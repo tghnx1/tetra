@@ -6,13 +6,13 @@ import { scene } from './scene.js';
 // Define UVs for each face (map each triangle to the full square texture)
 const uvs = [
     // Face 1: [0, 1, 2]
-    0.5, 0,   0, 1,   1, 1,
+    0.5, 1,   0, 0,   1, 0,
     // Face 2: [0, 2, 3]
-    0.5, 0,   0, 1,   1, 1,
+    0.5, 1,   0, 0,   1, 0,
     // Face 3: [0, 3, 1]
-    0.5, 0,   0, 1,   1, 1,
-    // Face 4: [1, 3, 2] (base face, can be same or flipped if needed)
-    0.5, 0,   0, 1,   1, 1,
+    0.5, 1,   0, 0,   1, 0,
+    // Face 4: [1, 3, 2]
+    0.5, 1,   0, 0,   1, 0,
 ];
 
 
