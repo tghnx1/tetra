@@ -1,28 +1,6 @@
 import * as THREE from 'https://unpkg.com/three@0.157.0/build/three.module.js';
 import { scene } from './scene.js';
 
-
-/*
-// Load texture using TextureLoader
-const textureLoader = new THREE.TextureLoader();
-// Load textures for all six faces
-const textures = [
-    textureLoader.load('./Media/Playground.png'), // Front face
-    textureLoader.load('./Media/Matr.png'), // Back face
-    textureLoader.load('./Media/Who.png'), // Top face
-    textureLoader.load('./Media/Legalisation.png'), // Bottom face
-    textureLoader.load('./Media/Whoroscope.png'), // Right face
-    textureLoader.load('./Media/White.png'), // Left face
-];
-
-// Disable mipmaps for sharpness
-textures.forEach(texture => {
-    texture.minFilter = THREE.NearestFilter;
-    texture.magFilter = THREE.NearestFilter;
-});
-
-*/
-
 // Edge length
 const a = 2;
 
