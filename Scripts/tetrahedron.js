@@ -25,7 +25,7 @@ textures.forEach(texture => {
 
 // Custom vertices for a "flatter" tetrahedron
 const vertices = [
-    new THREE.Vector3(0, 1, 0),    // Top vertex (move closer to base for blunter angles)
+    new THREE.Vector3(0, 2, 0),    // Top vertex (move closer to base for blunter angles)
     new THREE.Vector3(-2, -2, 2),  // Base vertex 1
     new THREE.Vector3(2, -2, 2),   // Base vertex 2
     new THREE.Vector3(0, -2, -2),  // Base vertex 3
@@ -74,7 +74,7 @@ function adjustCubeScale() {
         tetrahedron.scale.set(0.5, 0.5, 0.5); // Scale down the tetrahedron
     } else {
         console.log('Larger screen detected, resetting tetrahedron scale');
-        tetrahedron.scale.set(0.7, 0.7, 0.7); // Default scale
+        tetrahedron.scale.set(0.8, 0.8, 0.8); // Default scale
     }
 }
 
