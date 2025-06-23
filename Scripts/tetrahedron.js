@@ -15,6 +15,7 @@ const uvs = [
     0, 1,   1, 1,   0.5, 0,
 ];
 
+
 // Load textures
 const loader = new THREE.TextureLoader();
 const textures = [
@@ -72,9 +73,10 @@ geometry.computeVertexNormals();
 // Create the tetrahedron mesh
 const tetrahedron = new THREE.Mesh(geometry, materials);
 
+
 // Set the starting position to isometric angles
-tetrahedron.rotation.y = Math.PI / 4; // 45 degrees around the Y-axis
-tetrahedron.rotation.x = Math.PI / 6; // 45 degrees around the X-axis
+tetrahedron.rotation.y = 0;
+tetrahedron.rotation.x = 0;
 
 // Set the tetrahedron position to the center
 tetrahedron.position.set(0, 0, 0);
