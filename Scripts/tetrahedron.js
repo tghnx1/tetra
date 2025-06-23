@@ -1,6 +1,20 @@
 import * as THREE from 'https://unpkg.com/three@0.157.0/build/three.module.js';
 import { scene } from './scene.js';
 
+// ... your existing code above ...
+
+// Define UVs for each face (map each triangle to the full square texture)
+const uvs = [
+    // Face 1
+    0, 1,   1, 1,   0.5, 0,
+    // Face 2
+    0, 1,   1, 1,   0.5, 0,
+    // Face 3
+    0, 1,   1, 1,   0.5, 0,
+    // Face 4
+    0, 1,   1, 1,   0.5, 0,
+];
+
 // Load textures
 const loader = new THREE.TextureLoader();
 const textures = [
@@ -52,6 +66,7 @@ for (const face of faces) {
     }
 }
 geometry.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3));
+geometry.setAttribute('uv', new THREE.Float32BufferAttribute(uvs, 2));
 geometry.computeVertexNormals();
 
 // Create the tetrahedron mesh
@@ -75,7 +90,6 @@ function adjustCubeScale() {
         tetrahedron.scale.set(0.5, 0.5, 0.5); // Scale down the tetrahedron
     }
 }
-
 
 // Adjust tetrahedron scale on window resize and load
 window.addEventListener('resize', adjustCubeScale);
