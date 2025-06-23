@@ -23,10 +23,35 @@ textures.forEach(texture => {
 
 */
 
+// Custom vertices for a "flatter" tetrahedron
+const vertices = [
+    new THREE.Vector3(0, 2, 0),    // Top vertex (move closer to base for blunter angles)
+    new THREE.Vector3(-2, -2, 2),  // Base vertex 1
+    new THREE.Vector3(2, -2, 2),   // Base vertex 2
+    new THREE.Vector3(0, -2, -2),  // Base vertex 3
+];
+
+// Define faces using the indices of the vertices
+const faces = [
+    [0, 1, 2],
+    [0, 2, 3],
+    [0, 3, 1],
+    [1, 3, 2],
+];
+
+// Create geometry and add vertices/faces
+const geometry = new THREE.BufferGeometry();
+const positions = [];
+for (const face of faces) {
+    for (const idx of face) {
+        positions.push(vertices[idx].x, vertices[idx].y, vertices[idx].z);
+    }
+}
+geometry.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3));
+geometry.computeVertexNormals();
+
 // Use a single color or texture material
 const material = new THREE.MeshPhongMaterial({ color: 0x00ffcc, flatShading: true });
-// Define the geometry for the tetrahedron
-const geometry = new THREE.TetrahedronGeometry(4); // Cube dimensions (4x4x4)
 
 // Create the tetrahedron mesh
 const tetrahedron = new THREE.Mesh(geometry, material);
