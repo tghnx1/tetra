@@ -72,7 +72,7 @@ function onMouseClick(event) {
     const intersects = raycaster.intersectObject(tetrahedron);
 
     if (intersects.length > 0) {
-        const faceIndex = Math.floor(intersects[0].faceIndex % 4); // Get tetrahedron face
+        const faceIndex = intersects[0].faceIndex;
         redirectToPage(faceIndex);
     }
 }
@@ -110,7 +110,8 @@ function onTouchEnd() {
     const intersects = raycaster.intersectObject(tetrahedron);
 
     if (intersects.length > 0) {
-        const faceIndex = Math.floor(intersects[0].faceIndex / 2); // Get tetrahedron face
+        // Use the triangle index directly
+        const faceIndex = intersects[0].faceIndex;
         redirectToPage(faceIndex);
     }
 }
