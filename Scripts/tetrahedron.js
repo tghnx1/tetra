@@ -4,10 +4,10 @@ import { scene } from './scene.js';
 // Load textures
 const loader = new THREE.TextureLoader();
 const textures = [
-    loader.load('../Media/Playground.png'),
-    loader.load('../Media/Playground.png'),
-    loader.load('../Media/Playground.png'),
-    loader.load('../Media/Playground.png'),
+    loader.load('../Media/White.png'),
+    loader.load('../Media/White.png'),
+    loader.load('../Media/White.png'),
+    loader.load('../Media/White.png'),
 ];
 
 // Create materials
@@ -57,8 +57,6 @@ for (const face of faces) {
 geometry.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3));
 geometry.computeVertexNormals();
 
-// Use a single color or texture material
-const material = new THREE.MeshPhongMaterial({ color: 0x00ffcc, flatShading: true });
 
 // Create the tetrahedron mesh
 const tetrahedron = new THREE.Mesh(geometry, materials);
