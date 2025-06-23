@@ -29,7 +29,7 @@ const material = new THREE.MeshPhongMaterial({ color: 0x00ffcc, flatShading: tru
 const geometry = new THREE.TetrahedronGeometry(4); // Cube dimensions (4x4x4)
 
 // Create the tetrahedron mesh
-const tetrahedron = new THREE.Mesh(geometry, materials);
+const tetrahedron = new THREE.Mesh(geometry, material);
 
 // Set the starting position to isometric angles
 tetrahedron.rotation.y = Math.PI / 4; // 45 degrees around the Y-axis
