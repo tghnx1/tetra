@@ -74,7 +74,7 @@ function adjustCubeScale() {
         tetrahedron.scale.set(0.5, 0.5, 0.5); // Scale down the tetrahedron
     } else {
         console.log('Larger screen detected, resetting tetrahedron scale');
-        tetrahedron.scale.set(1, 1, 1); // Default scale
+        tetrahedron.scale.set(0.7, 0.7, 0.7); // Default scale
     }
 }
 
