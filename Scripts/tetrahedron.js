@@ -57,7 +57,6 @@ for (const face of faces) {
 geometry.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3));
 geometry.computeVertexNormals();
 
-
 // Create the tetrahedron mesh
 const tetrahedron = new THREE.Mesh(geometry, materials);
 
