@@ -18,9 +18,9 @@ const uvs = [
 // Load textures
 const loader = new THREE.TextureLoader();
 const textures = [
-    loader.load('./Media/Playground.png'),
-    loader.load('./Media/Who.png'),
-    loader.load('./Media/Legalisation.png'),
+    loader.load('./Media/test.png'),
+    loader.load('./Media/test.png'),
+    loader.load('./Media/test.png'),
     loader.load('./Media/test.png'),
 ];
 
