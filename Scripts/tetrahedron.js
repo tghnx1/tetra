@@ -23,16 +23,21 @@ textures.forEach(texture => {
 
 */
 
-// Правильный тетраэдр (все рёбра равны)
-const sqrt2over3 = Math.sqrt(2) / 3;
-const sqrt6over3 = Math.sqrt(6) / 3;
+// Edge length
+const a = 2;
 
-// Custom vertices for a "flatter" tetrahedron
+// Height from base to top vertex
+const h = Math.sqrt(2 / 3) * a;
+
+// Height of the base triangle
+const baseHeight = Math.sqrt(3) / 2 * a;
+
+// Vertices: base in XZ-plane, top above centroid
 const vertices = [
-    new THREE.Vector3(0, 1, 0), // Вершина 0
-    new THREE.Vector3(-sqrt2over3, -1/3, sqrt6over3), // Вершина 1
-    new THREE.Vector3(sqrt2over3, -1/3, sqrt6over3),  // Вершина 2
-    new THREE.Vector3(0, -1/3, -2*sqrt6over3),        // Вершина 3
+    new THREE.Vector3(0, h / 2, 0), // Top vertex (centered above base)
+    new THREE.Vector3(-a / 2, -h / 2, baseHeight / 3), // Base vertex 1
+    new THREE.Vector3(a / 2, -h / 2, baseHeight / 3),  // Base vertex 2
+    new THREE.Vector3(0, -h / 2, -2 * baseHeight / 3), // Base vertex 3
 ];
 
 // Define faces using the indices of the vertices
