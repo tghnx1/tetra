@@ -11,8 +11,8 @@ renderer.setPixelRatio(window.devicePixelRatio); // Use pixel ratio for high-DPI
 
 document.body.appendChild(renderer.domElement);
 
-// Import and initialize objects (cube and edges)
-import './cube.js'; // No need to rename this file, as it's just updated with the cube logic
+// Import and initialize objects (tetrahedron and edges)
+import './tetrahedron.js'; // No need to rename this file, as it's just updated with the tetrahedron logic
 
 // Register controls and event listeners
 registerEventListeners(renderer);

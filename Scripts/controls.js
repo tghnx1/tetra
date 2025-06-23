@@ -1,5 +1,5 @@
 import { camera } from './scene.js';
-import { cube } from './cube.js';
+import { tetrahedron } from './tetrahedron.js';
 
 let isDragging = false;
 export { isDragging };
@@ -29,8 +29,8 @@ function onMouseMove(event) {
     // Update drag threshold (track movement distance)
     dragThreshold += Math.sqrt(deltaX * deltaX + deltaY * deltaY);
 
-    cube.rotation.y += deltaX * rotationSpeed; // Rotate on Y-axis
-    cube.rotation.x += deltaY * rotationSpeed; // Rotate on X-axis
+    tetrahedron.rotation.y += deltaX * rotationSpeed; // Rotate on Y-axis
+    tetrahedron.rotation.x += deltaY * rotationSpeed; // Rotate on X-axis
 }
 
 function onTouchMove(event) {
@@ -47,8 +47,8 @@ function onTouchMove(event) {
     // Update drag threshold (track movement distance)
     dragThreshold += Math.sqrt(deltaX * deltaX + deltaY * deltaY);
 
-    cube.rotation.y += deltaX * rotationSpeed; // Rotate on Y-axis
-    cube.rotation.x += deltaY * rotationSpeed; // Rotate on X-axis
+    tetrahedron.rotation.y += deltaX * rotationSpeed; // Rotate on Y-axis
+    tetrahedron.rotation.x += deltaY * rotationSpeed; // Rotate on X-axis
 
     lastTouchX = touch.clientX;
     lastTouchY = touch.clientY;
@@ -69,10 +69,10 @@ function onMouseClick(event) {
 
     // Perform raycasting
     raycaster.setFromCamera(mouse, camera);
-    const intersects = raycaster.intersectObject(cube);
+    const intersects = raycaster.intersectObject(tetrahedron);
 
     if (intersects.length > 0) {
-        const faceIndex = Math.floor(intersects[0].faceIndex / 2); // Get cube face
+        const faceIndex = Math.floor(intersects[0].faceIndex / 2); // Get tetrahedron face
         redirectToPage(faceIndex);
     }
 }
@@ -108,10 +108,10 @@ function onTouchEnd() {
 
     // Perform raycasting
     raycaster.setFromCamera(mouse, camera);
-    const intersects = raycaster.intersectObject(cube);
+    const intersects = raycaster.intersectObject(tetrahedron);
 
     if (intersects.length > 0) {
-        const faceIndex = Math.floor(intersects[0].faceIndex / 2); // Get cube face
+        const faceIndex = Math.floor(intersects[0].faceIndex / 2); // Get tetrahedron face
         redirectToPage(faceIndex);
     }
 }
