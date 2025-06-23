@@ -21,7 +21,7 @@ const textures = [
     loader.load('./Media/Playground.png'),
     loader.load('./Media/Who.png'),
     loader.load('./Media/Legalisation.png'),
-    loader.load('./Media/Mein.png'),
+    loader.load('./Media/test.png'),
 ];
 
 // Create materials
