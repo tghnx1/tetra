@@ -25,7 +25,7 @@ textures.forEach(texture => {
 
 // Custom vertices for a "flatter" tetrahedron
 const vertices = [
-    new THREE.Vector3(0, 2, 0),    // Top vertex (move closer to base for blunter angles)
+    new THREE.Vector3(0, 0.5, 0),    // Top vertex (move closer to base for blunter angles)
     new THREE.Vector3(-2, -2, 2),  // Base vertex 1
     new THREE.Vector3(2, -2, 2),   // Base vertex 2
     new THREE.Vector3(0, -2, -2),  // Base vertex 3
