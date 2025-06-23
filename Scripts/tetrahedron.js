@@ -1,6 +1,18 @@
 import * as THREE from 'https://unpkg.com/three@0.157.0/build/three.module.js';
 import { scene } from './scene.js';
-import { addFaceNumbers } from './faceNumbers.js';
+
+// Load textures
+const loader = new THREE.TextureLoader();
+const textures = [
+    loader.load('../Media/Playground.png'),
+    loader.load('../Media/Playground.png'),
+    loader.load('../Media/Playground.png'),
+    loader.load('../Media/Playground.png'),
+];
+
+// Create materials
+const materials = textures.map(tex => new THREE.MeshPhongMaterial({ map: tex, flatShading: true }));
+
 
 // Edge length
 const a = 2;
@@ -29,6 +41,13 @@ const faces = [
 
 // Create geometry and add vertices/faces
 const geometry = new THREE.BufferGeometry();
+
+// When creating geometry, set groups for each face
+geometry.clearGroups();
+for (let i = 0; i < 4; i++) {
+    geometry.addGroup(i * 3, 3, i); // 3 vertices per face, material index = i
+}
+
 const positions = [];
 for (const face of faces) {
     for (const idx of face) {
@@ -42,7 +61,7 @@ geometry.computeVertexNormals();
 const material = new THREE.MeshPhongMaterial({ color: 0x00ffcc, flatShading: true });
 
 // Create the tetrahedron mesh
-const tetrahedron = new THREE.Mesh(geometry, material);
+const tetrahedron = new THREE.Mesh(geometry, materials);
 
 // Set the starting position to isometric angles
 tetrahedron.rotation.y = Math.PI / 4; // 45 degrees around the Y-axis
@@ -70,6 +89,5 @@ window.addEventListener('load', adjustCubeScale);
 
 // Initial call to set the correct scale
 adjustCubeScale();
-addFaceNumbers(vertices, faces);
 
 export { tetrahedron };
