@@ -23,12 +23,16 @@ textures.forEach(texture => {
 
 */
 
+const a = Math.sqrt(8 / 9);
+const b = 1 / 3;
+const c = Math.sqrt(2 / 9);
+
 // Custom vertices for a "flatter" tetrahedron
 const vertices = [
-    new THREE.Vector3(0, 0.5, 0),    // Top vertex (move closer to base for blunter angles)
-    new THREE.Vector3(-2, -2, 2),  // Base vertex 1
-    new THREE.Vector3(2, -2, 2),   // Base vertex 2
-    new THREE.Vector3(0, -2, -2),  // Base vertex 3
+    new THREE.Vector3(0, 1, 0),    // Top vertex (move closer to base for blunter angles)
+    new THREE.Vector3(-a, -b, c),  // Base vertex 1
+    new THREE.Vector3(a, -b, c),   // Base vertex 2
+    new THREE.Vector3(0, -b, -2 * c),  // Base vertex 3
 ];
 
 // Define faces using the indices of the vertices
