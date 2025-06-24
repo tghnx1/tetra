@@ -79,8 +79,8 @@ function onMouseClick(event) {
 
 function redirectToPage(faceIndex) {
     const pages = [
-        './Pages/Playground.html',
-        './Pages/Marteshka.html',
+        './Pages/Babbibrun.html',
+        './Pages/Promo.html',
         'https://sites.google.com/view/atmospresskiteng/main',
         'https://tghnx1.github.io/Cube/',
     ];
