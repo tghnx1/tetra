@@ -15,5 +15,17 @@
 <body>
 <script src="https://cdn.jsdelivr.net/npm/three@0.136.0/build/three.min.js"></script>
 <script type="module" src="Scripts/main.js"></script>
+
+<!-- Overlay for dynamic content -->
+<div id="overlay-content" style="
+    position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+    background: rgba(0,0,0,0.95); color: #00ff00;
+    display: none; z-index: 20; overflow: auto;
+    font-family: 'Arial Black', sans-serif; text-align: center;
+  ">
+  <button onclick="document.getElementById('overlay-content').style.display='none'" style="margin:20px;font-size:2em;">✕</button>
+  <div id="overlay-inner"></div>
+</div>
+
 </body>
 </html>
