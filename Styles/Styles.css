@@ -105,3 +105,16 @@ input[type="email"] {
     min-height: 100vh;
     text-align: center;
 }
+
+@media (min-width: 768px) {
+    body {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        min-height: 100vh;
+    }
+    .section {
+        width: 50vw; /* Adjust as needed */
+        margin-right: 5vw;
+    }
+}
