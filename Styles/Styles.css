@@ -102,6 +102,6 @@ input[type="email"] {
     justify-content: center;
     align-items: center;
     padding: 50px 20px;
-    min-height: 50vh;
+    min-height: 100vh;
     text-align: center;
 }
