@@ -86,3 +86,9 @@ input[type="email"] {
     font-size: 0.9em;
     color: gray;
 }
+
+.section {
+    padding: 50px 20px;
+    text-align: center;
+    min-height: 50vh;
+}
