@@ -10,10 +10,10 @@ const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerH
 const isMobile = window.innerWidth < 768;
 
 if (isMobile) {
-    camera.position.set(0, -2.5, 5); // Move camera down, look up at origin
+    camera.position.set(0, -4, 5); // Move camera down, look up at origin
     camera.lookAt(0, 0, 0);
 } else {
-    camera.position.set(2.5, 0, 5); // Desktop: move right for left shift
+    camera.position.set(4, 0, 5); // Desktop: move right for left shift
     camera.lookAt(0, 0, 0);
 }
 
