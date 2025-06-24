@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    font-family: 'Arial Black', sans-serif;
+    background-color: black;
+    color: #00ff00;
+}
+
+.section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.green {
+    background-color: #00ff00;
+    color: black;
+}
+
+.black {
+    background-color: black;
+    color: #00ff00;
+}
+
+.headline {
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0 0 20px 0;
+}
+
+.headline.small {
+    font-size: 1.5em;
+}
+
+.subtext {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.notice-text {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.black-text {
+    color: black;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+.logo {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: right;
+    transform: rotate(-10deg);
+    line-height: 1.1;
+}
+
+input[type="email"] {
+    width: 80%;
+    max-width: 400px;
+    padding: 12px;
+    font-size: 1em;
+    margin-top: 10px;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+}
+
+.footer-note {
+    margin-top: 15px;
+    font-size: 0.9em;
+    color: gray;
+}

@@ -1,116 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Club Athleten</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Arial', sans-serif;
-      background-color: #000;
-      color: #00FF40;
-    }
-
-    .section {
-      padding: 40px 20px;
-    }
-
-    .black-section {
-      background-color: black;
-      color: #00FF40;
-    }
-
-    .green-section {
-      background-color: #00FF40;
-      color: black;
-    }
-
-    .heading {
-      font-weight: bold;
-      text-transform: uppercase;
-      font-size: 1.5em;
-      margin-bottom: 20px;
-    }
-
-    .subheading {
-      font-weight: bold;
-      font-size: 1.2em;
-      text-transform: uppercase;
-    }
-
-    .text {
-      font-size: 1em;
-      line-height: 1.6;
-      max-width: 600px;
-    }
-
-    .footer {
-      background-color: black;
-      color: white;
-      padding: 20px;
-      text-align: center;
-      font-size: 0.9em;
-    }
-
-    input[type="email"] {
-      width: 80%;
-      max-width: 400px;
-      padding: 12px;
-      margin-top: 15px;
-      font-size: 1em;
-      border: 2px solid white;
-      background: black;
-      color: white;
-    }
-
-    .logo {
-      position: absolute;
-      right: 20px;
-      transform: rotate(-10deg);
-      font-weight: bold;
-      font-size: 1.2em;
-    }
-
-    .stay-connected {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 10px;
-      padding: 0 20px;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Club Athleten Style</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-<div class="green-section section">
-  <p class="text">join the workout, and you will not be able to use the credit to reschedule or join a later class.</p>
-</div>
+<section class="section green">
+  <p class="notice-text">
+    join the workout, and you will not be able to use the credit to reschedule or join a later class.
+  </p>
+</section>
 
-<div class="black-section section">
-  <div class="heading">I'm 6 years old!<br>Can I join?</div>
-  <p class="text">All of our workouts and events are 18+.</p>
-</div>
+<section class="section black">
+  <h1 class="headline">I'M 6 YEARS OLD!<br>CAN I JOIN?</h1>
+  <p class="subtext">All of our workouts and events are 18+.</p>
+</section>
 
-<div class="green-section section">
-  <div class="subheading">Heads up!</div>
-  <p class="text">
+<section class="section green">
+  <h2 class="headline small">HEADS UP!</h2>
+  <p class="notice-text black-text">
     Certain sensory elements in our space may pose challenges for those with health conditions or other sensitivities.
     Please note that due to lighting effects, sound and other sensory stimuli, our workouts and events may not be suitable
     for people who are prone to seizures or who have heightened sensitivities due to neurodivergence. If you require any
     accommodations or support, don’t hesitate to reach out to us!
   </p>
-</div>
+</section>
 
-<div class="footer">
-  <div class="stay-connected">
-    <div>Stay connected 💌</div>
-    <div class="logo">CLUB ATHLETEN</div>
+<footer class="footer">
+  <div class="footer-top">
+    <span>Stay connected 💌</span>
+    <div class="logo">CLUB<br>ATHLETEN</div>
   </div>
   <form>
     <input type="email" placeholder="Email *" required />
   </form>
-  <p style="margin-top: 10px;">🔒 clubathleten.de — частный доступ</p>
-</div>
+  <p class="footer-note">🔒 clubathleten.de — частный доступ</p>
+</footer>
 
 </body>
 </html>
