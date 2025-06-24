@@ -82,7 +82,7 @@ function redirectToPage(faceIndex) {
         './Pages/Promo.html',
         './Pages/Babbibrun.html',
         'https://sites.google.com/view/atmospresskiteng/main',
-        'https://tghnx1.github.io/Cube/',
+        './Pages/Holywanderer.html',
     ];
     if (faceIndex >= 0 && faceIndex < pages.length) {
         window.location.href = pages[faceIndex]; // Navigate to corresponding page
