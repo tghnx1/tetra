@@ -85,7 +85,21 @@ function redirectToPage(faceIndex) {
         './Pages/Holywanderer.html',
     ];
     if (faceIndex >= 0 && faceIndex < pages.length) {
-        window.location.href = pages[faceIndex]; // Navigate to corresponding page
+        const url = pages[faceIndex];
+        if (url.startsWith('http')) {
+            window.open(url, '_blank');
+            return;
+        }
+        fetch(url)
+            .then(res => res.text())
+            .then(html => {
+                // Извлекаем только содержимое <section> (или нужный фрагмент)
+                const temp = document.createElement('div');
+                temp.innerHTML = html;
+                const section = temp.querySelector('section');
+                document.getElementById('overlay-inner').innerHTML = section ? section.outerHTML : html;
+                document.getElementById('overlay-content').style.display = 'block';
+            });
     }
 }
 
