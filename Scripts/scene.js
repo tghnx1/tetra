@@ -6,7 +6,7 @@ scene.background = new THREE.Color(0x000000); // Set background color to solid b
 // Create perspective camera
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 camera.position.z = 5;
-camera.position.set(4, 0, 0);
+camera.position.x = 4;
 
 // Add ambient and directional light
 const ambientLight = new THREE.AmbientLight(0xffffff, 0.5); // Lower intensity ambient light
