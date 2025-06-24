@@ -3,15 +3,10 @@ import * as THREE from 'https://unpkg.com/three@0.157.0/build/three.module.js';
 const scene = new THREE.Scene();
 scene.background = new THREE.Color(0x000000); // Set background color to solid black
 
-// Move camera to the right and look at the center
-const camera = new THREE.PerspectiveCamera(
-    75,
-    window.innerWidth / window.innerHeight,
-    0.1,
-    1000
-);
-camera.position.set(2.5, 0, 5); // Move camera right (x=2.5)
-camera.lookAt(0, 0, 0);
+// Create perspective camera
+const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+camera.position.z = 5;
+camera.position.set(4, 0, 0);
 
 // Add ambient and directional light
 const ambientLight = new THREE.AmbientLight(0xffffff, 0.5); // Lower intensity ambient light
