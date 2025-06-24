@@ -81,8 +81,8 @@ function redirectToPage(faceIndex) {
     const pages = [
         './Pages/Playground.html',
         './Pages/Marteshka.html',
-        './Pages/About.html',
-        './Pages/Legalisation.html',
+        'https://sites.google.com/view/atmospresskiteng/main',
+        'https://tghnx1.github.io/Cube/',
     ];
     if (faceIndex >= 0 && faceIndex < pages.length) {
         window.location.href = pages[faceIndex]; // Navigate to corresponding page
