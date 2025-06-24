@@ -8,6 +8,7 @@ const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerH
 
 // Detect mobile (simple check)
 const isMobile = window.innerWidth < 768;
+
 if (isMobile)
 {
     camera.position.z = 5;
