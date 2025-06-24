@@ -5,9 +5,17 @@ scene.background = new THREE.Color(0x000000); // Set background color to solid b
 
 // Create perspective camera
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-camera.position.z = 5;
-camera.position.x = 2.5;
-camera.lookAt(0, 0, 0);
+
+// Detect mobile (simple check)
+const isMobile = window.innerWidth < 768;
+
+if (isMobile) {
+    camera.position.set(0, -2.5, 5); // Move camera down, look up at origin
+    camera.lookAt(0, 0, 0);
+} else {
+    camera.position.set(2.5, 0, 5); // Desktop: move right for left shift
+    camera.lookAt(0, 0, 0);
+}
 
 // Add ambient and directional light
 const ambientLight = new THREE.AmbientLight(0xffffff, 0.5); // Lower intensity ambient light
