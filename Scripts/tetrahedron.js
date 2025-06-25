@@ -79,9 +79,7 @@ const tetrahedron = new THREE.Mesh(geometry, materials);
 tetrahedron.rotation.y = 0;
 tetrahedron.rotation.x = 0;
 
-// Set the tetrahedron position to the left screen side
-tetrahedron.position.set(-2.5, 0, -5);
-tetrahedron.scale.set(2, 2, 2); // Makes the tetrahedron 2x larger
+
 // Add the tetrahedron to the scene
 scene.add(tetrahedron);
 //camera.position.x = 2.5;
@@ -93,7 +91,12 @@ function adjustCubeScale() {
     if (window.innerWidth <= 980) { // Mobile screen size
         console.log('Mobile screen detected, scaling down the tetrahedron');
         tetrahedron.scale.set(1.5, 1.5, 1.5); // Scale down the tetrahedron
-        tetrahedron.position.set(2.5, 2, 5);
+        tetrahedron.position.set(2.5, -2, 5);
+    }
+    else {
+        // Desktop: original position
+        tetrahedron.scale.set(2, 2, 2);
+        tetrahedron.position.set(-2.5, 0, -5);
     }
 }
 
