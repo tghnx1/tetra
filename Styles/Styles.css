@@ -146,3 +146,8 @@ input[type="email"] {
         position: fixed; /* Ensures overlay is positioned above */
     }
 }
+
+#tetrahedron {
+    position: relative; /* or absolute/fixed */
+    z-index: 10; /* Adjust as needed */
+}
