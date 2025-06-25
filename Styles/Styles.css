@@ -81,6 +81,7 @@ body {
         font-size: 0.8em;
         line-height: 1.6;
         color: #ff0000; /* Pink */
+        text-align: justify;
     }
     .section-img {
         height: 15vh;
