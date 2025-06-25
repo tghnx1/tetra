@@ -123,20 +123,6 @@ input[type="email"] {
     align-items: center;
 }
 
-@media (min-width: 768px) {
-    body {
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-start;
-        min-height: 100vh;
-    }
-    .section {
-        margin-left: auto;
-        width: 50vw; /* Adjust as needed */
-        margin-right: 5vw;
-    }
-}
-
 @media (max-width: 767px) {
     #overlay-content {
         left: 50% !important;
