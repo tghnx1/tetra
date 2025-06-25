@@ -81,14 +81,14 @@ body {
         top: 0;
         left: 0;
         width: 100vw;
-        height: auto;
-        min-height: 100px;
+        height: 100vh;
         display: flex;
-        justify-content: center;   /* Center horizontally */
-        align-items: flex-start;   /* Align to top */
+        justify-content: center; /* Center horizontally */
+        align-items: flex-start; /* Align to top */
         text-align: center;
-        background: rgba(0,0,0,0);
+        background: rgba(0, 0, 0, 0); /* Transparent background */
         z-index: 20;
-        padding-top: 20px;        /* Optional: space from top */
+        padding-top: 20px;
+        overflow: auto;
     }
 }
