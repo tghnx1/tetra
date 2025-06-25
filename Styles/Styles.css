@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: 'Arial Black', sans-serif;
     background-color: transparent;
-    color: #ff0000; /* Pink */
+    color: #1bff00; /* Pink */
 }
 
 
@@ -64,7 +64,7 @@ body {
         width: 50%;
         height: 100vh;
         background: rgba(0, 0, 0, 0);
-        color: #ff0000; /* Pink */
+        color: #1bff00; /* Pink */
         z-index: 20;
         overflow: auto;
         text-align: center;
@@ -80,7 +80,7 @@ body {
         margin: 0 auto;
         font-size: 0.8em;
         line-height: 1.6;
-        color: #ff0000; /* Pink */
+        color: #1bff00; /* Pink */
         text-align: justify;
     }
     .section-img {
@@ -104,7 +104,7 @@ body {
         align-items: flex-start; /* Прилепить вверх по вертикали */
         padding-top: 10px; /* Отступ сверху */
         text-align: center;
-        background: rgba(0, 0, 0, 0);
+        background: rgba(0, 0, 0, 0.4);
         z-index: 20;
         overflow: auto;
         box-sizing: border-box;
