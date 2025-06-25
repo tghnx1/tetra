@@ -33,7 +33,20 @@ body {
     color: black;
 }
 
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
 
+
+
+.footer-note {
+    margin-top: 15px;
+    font-size: 0.9em;
+    color: gray;
+}
 
 .section-img {
     height: 33vh;
