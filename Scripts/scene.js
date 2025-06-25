@@ -14,7 +14,7 @@ if (!isMobile)
     camera.position.x = 2.5;
 else
     {
-        camera.position.z = 3; // Adjusted for mobile view
+        camera.position.y = 3; // Adjusted for mobile view
         console.log("Mobile detected: ");
         console.log(isMobile);
     }
