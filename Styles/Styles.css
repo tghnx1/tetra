@@ -108,16 +108,20 @@ input[type="email"] {
 
 #overlay-content {
     position: fixed;
-    top: 0;
+    top: 50%;
     left: 50%;
     width: 50%;
-    height: 100vh;
+    height: auto;
     background: rgba(0,0,0,0);
     color: #00ff00;
     z-index: 20;
     overflow: auto;
     font-family: 'Arial Black', sans-serif;
     text-align: center;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media (min-width: 768px) {
