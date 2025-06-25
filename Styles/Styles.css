@@ -129,9 +129,7 @@ input[type="email"] {
 
 @media (max-width: 767px) {
     #overlay-content {
-        left: 50% ;
-        top: 50% ;
-        transform: translate(-50%, -50%) ;
+        top: 10% ;
         width: 100vw ;
         height: auto ;
         min-height: 200px;
