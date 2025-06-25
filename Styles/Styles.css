@@ -56,7 +56,7 @@ body {
     box-shadow: 0 4px 16px rgba(0,0,0,0.2);
 }
 
-@media (min-width: 796px) {
+@media (min-width: 941px) {
     #overlay-content {
         position: fixed;
         top: 0;
@@ -74,20 +74,21 @@ body {
     }
 }
 
-
-#overlay-content {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;     /* Центр по горизонтали */
-    align-items: flex-start;     /* Прилепить вверх по вертикали */
-    padding-top: 40px;           /* Отступ сверху */
-    text-align: center;
-    background: rgba(0, 0, 0, 0);
-    z-index: 20;
-    overflow: auto;
-    box-sizing: border-box;
+@media (max-width: 940px) {
+    #overlay-content {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center; /* Центр по горизонтали */
+        align-items: flex-start; /* Прилепить вверх по вертикали */
+        padding-top: 40px; /* Отступ сверху */
+        text-align: center;
+        background: rgba(0, 0, 0, 0);
+        z-index: 20;
+        overflow: auto;
+        box-sizing: border-box;
+    }
 }
