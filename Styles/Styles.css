@@ -48,7 +48,7 @@ body {
 }
 
 .section-img {
-    height: 20vh;
+    height: 30vh;
     max-width: 100%;
     width: auto;
     display: block;
@@ -104,7 +104,7 @@ body {
         align-items: flex-start; /* Прилепить вверх по вертикали */
         padding-top: 10px; /* Отступ сверху */
         text-align: center;
-        background: rgba(0, 0, 0, 0.4);
+        background: rgba(0, 0, 0, 0);
         z-index: 20;
         overflow: auto;
         box-sizing: border-box;
