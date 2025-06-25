@@ -85,6 +85,7 @@ tetrahedron.scale.set(2, 2, 2); // Makes the tetrahedron 2x larger
 // Add the tetrahedron to the scene
 scene.add(tetrahedron);
 
+
 // Function to adjust tetrahedron scale based on screen size
 function adjustCubeScale() {
     console.log(`Screen size: ${window.innerWidth}x${window.innerHeight}`);
