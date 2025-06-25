@@ -142,7 +142,7 @@ input[type="email"] {
         align-items: center ;
         text-align: center;
         background: rgba(0,0,0,0);
-        z-index: 0; /* Ensures overlay is above other elements */
+        z-index: -1; /* Ensures overlay is above other elements */
         position: fixed; /* Ensures overlay is positioned above */
     }
 }
