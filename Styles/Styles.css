@@ -125,17 +125,18 @@ input[type="email"] {
 
 @media (max-width: 767px) {
     #overlay-content {
-        top: 0% ;
-        width: 100vw ;
-        height: auto ;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
         font-size: 1em;
-        display: flex ;
+        display: flex;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center; /* Center vertically */
         text-align: center;
         background: rgba(0,0,0,0);
-        z-index: -1; /* Ensures overlay is above other elements */
-        position: fixed; /* Ensures overlay is positioned above */
+        z-index: 20;
+        position: fixed;
     }
 }
 
