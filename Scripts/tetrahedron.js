@@ -80,11 +80,12 @@ tetrahedron.rotation.y = 0;
 tetrahedron.rotation.x = 0;
 
 // Set the tetrahedron position to the center
-tetrahedron.position.set(0, 0, 0);
+tetrahedron.position.set(-2.5, 0, -5);
 tetrahedron.scale.set(2, 2, 2); // Makes the tetrahedron 2x larger
 // Add the tetrahedron to the scene
 scene.add(tetrahedron);
-
+//camera.position.x = 2.5;
+//camera.position.z = 5;
 
 // Function to adjust tetrahedron scale based on screen size
 function adjustCubeScale() {
