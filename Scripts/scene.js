@@ -11,14 +11,17 @@ const isMobile = window.innerWidth < 980;
 console.log(isMobile);
 camera.lookAt(0, 0, 0);
 if (!isMobile)
-    camera.position.x = 2.5;
+    {
+        camera.position.x = 2.5;
+        camera.position.z = 5;
+    }
 else
     {
-        camera.position.y = 3; // Adjusted for mobile view
+        camera.position.y = 4; // Adjusted for mobile view
+        camera.position.z = 10;
         console.log("Mobile detected: ");
         console.log(isMobile);
     }
-camera.position.z = 0;
 // Add ambient and directional light
 const ambientLight = new THREE.AmbientLight(0xffffff, 0.5); // Lower intensity ambient light
 scene.add(ambientLight);
