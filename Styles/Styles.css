@@ -75,20 +75,3 @@ body {
 }
 
 
-@media (max-width: 796px) {
-    #overlay-content {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: auto;
-        min-height: 100px;
-        display: flex;
-        justify-content: center;   /* Center horizontally */
-        align-items: flex-start;   /* Align to top */
-        text-align: center;
-        background: rgba(0,0,0,0);
-        z-index: 20;
-        padding-top: 20px;        /* Optional: space from top */
-    }
-}
