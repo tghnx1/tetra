@@ -18,7 +18,7 @@ else
         console.log("Mobile detected: ");
         console.log(isMobile);
     }
-camera.position.z = 5;
+camera.position.z = 0;
 // Add ambient and directional light
 const ambientLight = new THREE.AmbientLight(0xffffff, 0.5); // Lower intensity ambient light
 scene.add(ambientLight);
