@@ -106,20 +106,21 @@ input[type="email"] {
     text-align: center;
 }
 
+#overlay-content {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100vh;
+    background: rgba(0,0,0,0);
+    color: #00ff00;
+    z-index: 20;
+    overflow: auto;
+    font-family: 'Arial Black', sans-serif;
+    text-align: center;
+}
+
 @media (min-width: 768px) {
-    #overlay-content {
-        position: fixed;
-        top: 0;
-        left: 50%;
-        width: 50%;
-        height: 100vh;
-        background: rgba(0,0,0,0);
-        color: #00ff00;
-        z-index: 20;
-        overflow: auto;
-        font-family: 'Arial Black', sans-serif;
-        text-align: center;
-    }
     body {
         display: flex;
         justify-content: flex-end;
