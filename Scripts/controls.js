@@ -81,7 +81,7 @@ function redirectToPage(faceIndex) {
     const pages = [
         './Pages/Promo.html',
         './Pages/Babbibrun.html',
-        'https://sites.google.com/view/atmospresskiteng/main',
+        './Pages/Atmos.html',
         './Pages/Holywanderer.html',
     ];
     if (faceIndex >= 0 && faceIndex < pages.length) {
