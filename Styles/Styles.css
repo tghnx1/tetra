@@ -33,34 +33,7 @@ body {
     color: black;
 }
 
-.footer {
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 30px 20px;
-}
 
-.footer-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 600px;
-    margin: 0 auto 20px;
-}
-
-.logo {
-    font-size: 1.2em;
-    font-weight: bold;
-    text-align: right;
-    transform: rotate(-10deg);
-    line-height: 1.1;
-}
-
-.footer-note {
-    margin-top: 15px;
-    font-size: 0.9em;
-    color: gray;
-}
 
 .section-img {
     height: 33vh;
