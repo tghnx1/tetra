@@ -7,7 +7,7 @@ scene.background = new THREE.Color(0x000000); // Set background color to solid b
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 
 // Detect mobile (simple check)
-const isMobile = window.innerWidth < 768;
+const isMobile = window.innerWidth < 980;
 console.log(isMobile);
 camera.lookAt(0, 0, 0);
 if (!isMobile)
