@@ -119,3 +119,17 @@ input[type="email"] {
         margin-right: 5vw;
     }
 }
+
+@media (max-width: 767px) {
+    #overlay-content {
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        font-size: 1em;
+        padding: 10px 0;
+    }
+    .section {
+        padding: 20px 5px;
+        min-height: 80vh;
+    }
+}
