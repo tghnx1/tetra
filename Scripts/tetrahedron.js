@@ -91,7 +91,7 @@ function adjustCubeScale() {
     if (window.innerWidth <= 980) { // Mobile screen size
         console.log('Mobile screen detected, scaling down the tetrahedron');
         tetrahedron.scale.set(1.5, 1.5, 1.5); // Scale down the tetrahedron
-        tetrahedron.position.set(2.5, -2, 5);
+        tetrahedron.position.set(2.5, -2, -5);
     }
     else {
         // Desktop: original position
