@@ -41,7 +41,6 @@ body {
 }
 
 
-
 .footer-note {
     margin-top: 15px;
     font-size: 0.9em;
@@ -60,7 +59,8 @@ body {
     #overlay-content {
         position: fixed;
         top: 0;
-        width: 100%;
+        right: 0;
+        width: 50%;
         height: 100vh;
         background: rgba(0,0,0,0);
         color: #00ff00;
@@ -77,7 +77,6 @@ body {
 @media (max-width: 796px) {
     #overlay-content {
         top: 50%;
-        left: 50%;
         width: 100vw;
         background: rgba(0, 0, 0, 0);
         z-index: 20;
