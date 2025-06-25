@@ -48,12 +48,12 @@ body {
 }
 
 .section-img {
-    height: 33vh;
+    height: 20vh;
+    max-width: 90vw;
     width: auto;
-    max-width: 100%;
-    border-radius: 16px;
+    display: block;
+    margin: 0 auto 12px auto;
     object-fit: cover;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
 }
 
 @media (min-width: 941px) {
@@ -75,6 +75,21 @@ body {
 }
 
 @media (max-width: 940px) {
+    .notice-text {
+        max-width: 700px;
+        margin: 0 auto;
+        font-size: 0.9em;
+        line-height: 1.6;
+        color: #ff69b4; /* Pink */
+    }
+    .section-img {
+        height: 20vh;
+        max-width: 90vw;
+        width: auto;
+        display: block;
+        margin: 0 auto 12px auto;
+        object-fit: cover;
+    }
     #overlay-content {
         height: 100vh;
         align-items: flex-start; /* Stick to the top vertically */
