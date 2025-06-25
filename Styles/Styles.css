@@ -75,20 +75,19 @@ body {
 }
 
 
-@media (max-width: 796px) {
-    #overlay-content {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        justify-content: center; /* Center horizontally */
-        align-items: flex-start; /* Align to top */
-        text-align: center;
-        background: rgba(0, 0, 0, 0); /* Transparent background */
-        z-index: 20;
-        padding-top: 20px;
-        overflow: auto;
-    }
+#overlay-content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;     /* Центр по горизонтали */
+    align-items: flex-start;     /* Прилепить вверх по вертикали */
+    padding-top: 40px;           /* Отступ сверху */
+    text-align: center;
+    background: rgba(0, 0, 0, 0);
+    z-index: 20;
+    overflow: auto;
+    box-sizing: border-box;
 }
