@@ -76,6 +76,7 @@ body {
 
 @media (max-width: 940px) {
     #overlay-content {
+        height: 100vh;
         position: fixed;
         top: 0;
         left: 0;
