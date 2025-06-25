@@ -56,13 +56,14 @@ body {
     box-shadow: 0 4px 16px rgba(0,0,0,0.2);
 }
 
+@media (min-width: 796px) {
     #overlay-content {
         position: fixed;
         top: 0;
         right: 0;
         width: 50%;
         height: 100vh;
-        background: rgba(0,0,0,0);
+        background: rgba(0, 0, 0, 0);
         color: #00ff00;
         z-index: 20;
         overflow: auto;
@@ -71,6 +72,7 @@ body {
         justify-content: center;
         align-items: center;
     }
+}
 
 
 @media (max-width: 796px) {
@@ -81,9 +83,4 @@ body {
         background: rgba(0, 0, 0, 0);
         z-index: 20;
     }
-}
-
-#tetrahedron {
-    position: relative; /* or absolute/fixed */
-    z-index: 10; /* Adjust as needed */
 }
