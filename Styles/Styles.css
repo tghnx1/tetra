@@ -78,12 +78,12 @@ body {
     .notice-text {
         max-width: 700px;
         margin: 0 auto;
-        font-size: 0.7em;
+        font-size: 0.6em;
         line-height: 1.6;
-        color: #ff69b4; /* Pink */
+        color: #ff0000; /* Pink */
     }
     .section-img {
-        height: 20vh;
+        height: 25vh;
         max-width: 90vw;
         width: auto;
         display: block;
@@ -101,7 +101,7 @@ body {
         display: flex;
         justify-content: center; /* Центр по горизонтали */
         align-items: flex-start; /* Прилепить вверх по вертикали */
-        padding-top: 40px; /* Отступ сверху */
+        padding-top: 10px; /* Отступ сверху */
         text-align: center;
         background: rgba(0, 0, 0, 0);
         z-index: 20;
