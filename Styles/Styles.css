@@ -126,8 +126,8 @@ input[type="email"] {
 @media (max-width: 767px) {
     #overlay-content {
         left: 50% !important;
-        top: 0 !important;
-        transform: translateX(-50%) !important;
+        top: 50% !important;
+        transform: translate(-50%, -50%) !important;
         width: 100vw !important;
         height: auto !important;
         min-height: 60px;
@@ -135,8 +135,8 @@ input[type="email"] {
         padding: 20px 0 10px 0;
         display: flex !important;
         justify-content: center;
-        align-items: flex-start;
-        background: rgba(0,0,0,0.7); /* Optional: for readability */
+        align-items: center !important;
+        background: rgba(0,0,0,0.7);
         text-align: center;
     }
 }
