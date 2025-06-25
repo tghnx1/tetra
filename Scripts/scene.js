@@ -9,9 +9,9 @@ const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerH
 // Detect mobile (simple check)
 const isMobile = window.innerWidth < 768;
 console.log(isMobile);
-camera.position.z = 5;
-camera.position.x = 0;
 camera.lookAt(0, 0, 0);
+camera.position.z = 5;
+camera.position.x = 2.5;
 
 // Add ambient and directional light
 const ambientLight = new THREE.AmbientLight(0xffffff, 0.5); // Lower intensity ambient light
