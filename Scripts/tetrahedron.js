@@ -1,5 +1,5 @@
 import * as THREE from 'https://unpkg.com/three@0.157.0/build/three.module.js';
-import { scene } from './scene.js';
+import {camera, scene} from './scene.js';
 
 // ... your existing code above ...
 
@@ -91,6 +91,8 @@ function adjustCubeScale() {
     if (window.innerWidth <= 980) { // Mobile screen size
         console.log('Mobile screen detected, scaling down the tetrahedron');
         tetrahedron.scale.set(1.5, 1.5, 1.5); // Scale down the tetrahedron
+        camera.position.y = 4; // Adjusted for mobile view
+        camera.position.z = 10;
     }
 }
 
