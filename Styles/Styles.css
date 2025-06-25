@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'Arial Black', sans-serif;
-    background-color: black;
+    background-color: transparent;
     color: #00ff00;
 }
 
@@ -10,15 +10,6 @@ body {
     text-align: center;
 }
 
-.green {
-    background-color: #00ff00;
-    color: black;
-}
-
-.black {
-    background-color: black;
-    color: #00ff00;
-}
 
 .headline {
     font-size: 2em;
@@ -68,17 +59,6 @@ body {
     text-align: right;
     transform: rotate(-10deg);
     line-height: 1.1;
-}
-
-input[type="email"] {
-    width: 80%;
-    max-width: 400px;
-    padding: 12px;
-    font-size: 1em;
-    margin-top: 10px;
-    border: 2px solid white;
-    background-color: black;
-    color: white;
 }
 
 .footer-note {
