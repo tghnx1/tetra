@@ -140,7 +140,7 @@ input[type="email"] {
         display: flex !important;
         justify-content: center;
         align-items: center !important;
-        background: rgba(0,0,0,0.7);
         text-align: center;
+        background: rgba(0,0,0,0);
     }
 }
