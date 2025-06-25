@@ -135,7 +135,6 @@ input[type="email"] {
         font-size: 1em;
         display: flex ;
         justify-content: center;
-        align-items: center ;
         text-align: center;
         background: rgba(0,0,0,0);
         z-index: -1; /* Ensures overlay is above other elements */
