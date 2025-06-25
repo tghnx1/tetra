@@ -125,9 +125,8 @@ input[type="email"] {
 
 @media (max-width: 796px) {
     #overlay-content {
-        position: fixed;
-        top: 0;
-        left: 0;
+        top: 50%;
+        left: 50%;
         width: 100vw;
         background: rgba(0, 0, 0, 0);
         z-index: 20;
