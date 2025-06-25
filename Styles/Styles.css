@@ -121,17 +121,19 @@ input[type="email"] {
 }
 
 @media (max-width: 767px) {
-    .section {
-        left: 50%;
-        top: 0;
-        transform: translateX(-50%);
-        width: 100vw;
-        height: auto;
+    #overlay-content {
+        left: 50% !important;
+        top: 0 !important;
+        transform: translateX(-50%) !important;
+        width: 100vw !important;
+        height: auto !important;
         min-height: 60px;
         font-size: 1em;
         padding: 20px 0 10px 0;
-        display: flex;
+        display: flex !important;
         justify-content: center;
         align-items: flex-start;
+        background: rgba(0,0,0,0.7); /* Optional: for readability */
+        text-align: center;
     }
 }
