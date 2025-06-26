@@ -59,7 +59,7 @@ body {
 @media (min-width: 941px) {
     #overlay-content {
         position: fixed;
-        top: 0;
+        top: 50%;
         right: 0;
         width: 50%;
         height: 100vh;
