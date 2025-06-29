@@ -27,8 +27,11 @@ const textures = [
 ];
 
 // Create materials
-const materials = textures.map(tex => new THREE.MeshPhongMaterial({ map: tex, flatShading: true }));
-
+const materials = textures.map(tex => new THREE.MeshPhongMaterial({
+    map: tex,
+    flatShading: true,
+    side: THREE.DoubleSide // <--- add this
+}));
 
 // Edge length
 const a = 2;
