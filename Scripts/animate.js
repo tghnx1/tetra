@@ -7,7 +7,7 @@ let blinkTime = 0;
 function animate(renderer, scene, camera) {
     // Rotate only if no dragging is happening
     if (!isDragging) {
-        blinkTime += 0.05; // Adjust speed as needed
+        blinkTime += 0.15; // Adjust speed as needed
         // Calculate pulse (0 to 1)
         const pulse = (Math.sin(blinkTime) + 1) / 2;
         // Interpolate between black and blue
