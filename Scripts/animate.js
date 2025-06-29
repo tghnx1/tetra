@@ -16,7 +16,7 @@ function animate(renderer, scene, camera) {
             new THREE.Color(0x222244),
             pulse
         );
-        tetrahedron.material.forEach(mat => mat.emissive.set(0x222244)); // subtle glow
+        tetrahedron.material.forEach(mat => mat.emissive.copy(color)); // Use the pulsing color
         tetrahedron.rotation.x += 0.003; // Adjust rotation speed on the X-axis
         tetrahedron.rotation.y += 0.003; // Adjust rotation speed on the Y-axis
     }
