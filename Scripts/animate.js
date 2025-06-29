@@ -9,7 +9,7 @@ function animate(renderer, scene, camera) {
     if (!isDragging) {
         blinkTime += 0.15; // Adjust speed as needed
         // Calculate pulse (0 to 1)
-        const pulse = (Math.sin(blinkTime) + 1) / 2;
+        const pulse = (Math.sin(blinkTime + Math.PI / 2) + 1) / 2
         // Interpolate between black and blue
         const color = new THREE.Color().lerpColors(
             new THREE.Color(0x000000),
