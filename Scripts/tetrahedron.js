@@ -12,7 +12,7 @@ const uvs = [
     // Face 3: [0, 3, 1]
     0.5, 1,   0, 0,   1, 0,
     // Face 4: [2, 3, 1] (reverse UV order to match winding)
-    1, 0,     0, 0,   0.5, 1
+    0, 0,     1, 0,   0.5, 1
 ];
 
 
@@ -52,7 +52,7 @@ const faces = [
     [0, 1, 2],
     [0, 2, 3],
     [0, 3, 1],
-    [2, 3, 1],
+    [1, 3, 2],
 ];
 
 // Create geometry and add vertices/faces
