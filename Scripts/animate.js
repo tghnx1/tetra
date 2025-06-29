@@ -1,21 +1,15 @@
+// Scripts/animate.js
 import { tetrahedron } from './tetrahedron.js';
-import { isDragging } from './controls.js'; // Import the isDragging state
-
+import { isDragging } from './controls.js';
 
 let blinkTime = 0;
 
-const faces = [
-    [0, 1, 2],
-    [0, 2, 3],
-    [0, 3, 1],
-    [1, 3, 2],
-];
-
-function getFaceNormal(face) {
+function getFaceNormal(faceIdx) {
     const pos = tetrahedron.geometry.attributes.position;
-    const a = new THREE.Vector3().fromArray(pos.array, face[0] * 3);
-    const b = new THREE.Vector3().fromArray(pos.array, face[1] * 3);
-    const c = new THREE.Vector3().fromArray(pos.array, face[2] * 3);
+    const i0 = faceIdx * 3;
+    const a = new THREE.Vector3().fromArray(pos.array, i0 * 3);
+    const b = new THREE.Vector3().fromArray(pos.array, (i0 + 1) * 3);
+    const c = new THREE.Vector3().fromArray(pos.array, (i0 + 2) * 3);
     const cb = new THREE.Vector3().subVectors(c, b);
     const ab = new THREE.Vector3().subVectors(a, b);
     const normal = new THREE.Vector3().crossVectors(cb, ab).normalize();
@@ -35,8 +29,8 @@ function animate(renderer, scene, camera) {
         const camDir = new THREE.Vector3();
         camera.getWorldDirection(camDir).negate();
         let maxDot = -Infinity, closestFace = 0;
-        for (let i = 0; i < faces.length; i++) {
-            const normal = getFaceNormal(faces[i]);
+        for (let i = 0; i < 4; i++) {
+            const normal = getFaceNormal(i);
             const dot = normal.dot(camDir);
             if (dot > maxDot) {
                 maxDot = dot;
