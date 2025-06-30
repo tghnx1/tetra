@@ -22,10 +22,14 @@
   </div>
 </div>
 <body>
+<div id="pointer-container">
+  <div id="pointer-arrow">
+    <span class="arrow-symbol">&#8592;</span>
+    <span class="arrow-text">Drag and click</span>
+  </div>
+</div>
 <script src="https://cdn.jsdelivr.net/npm/three@0.136.0/build/three.min.js"></script>
 <script type="module" src="Scripts/main.js"></script>
-
-<!-- Overlay for dynamic content -->
 <div id="overlay-content">
   <div id="overlay-inner"></div>
 </div>
@@ -33,9 +37,9 @@
   function updateArrowSymbol() {
     const arrow = document.querySelector('.arrow-symbol');
     if (window.innerWidth <= 940) {
-      arrow.innerHTML = '&#8595;'; // Down arrow for mobile
+      arrow.innerHTML = '&#8595;';
     } else {
-      arrow.innerHTML = '&#8592;'; // Left arrow for desktop
+      arrow.innerHTML = '&#8592;';
     }
   }
   window.addEventListener('resize', updateArrowSymbol);
