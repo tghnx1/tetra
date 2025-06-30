@@ -15,6 +15,8 @@ let lastTouchY = 0;
 function onMouseDown() {
     isDragging = true; // Start dragging
     dragThreshold = 0;
+    const pointer = document.getElementById('pointer-container');
+    if (pointer) pointer.style.display = 'none';
 }
 
 function onMouseMove(event) {
@@ -109,6 +111,8 @@ function onTouchStart(event) {
     dragThreshold = 0;
     lastTouchX = event.touches[0].clientX;
     lastTouchY = event.touches[0].clientY;
+    const pointer = document.getElementById('pointer-container');
+    if (pointer) pointer.style.display = 'none';
 }
 
 function onTouchEnd() {
