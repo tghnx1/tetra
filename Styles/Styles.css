@@ -133,6 +133,7 @@ body {
         z-index: 10;
         pointer-events: none;
     }
+
     #pointer-arrow {
         display: flex;
         align-items: center;
@@ -151,13 +152,14 @@ body {
         animation: bounce-vertical 1s infinite;
         position: relative;
     }
+
     .arrow-symbol {
         font-size: 3rem;
         margin-right: 0.7em;
         filter: drop-shadow(0 0 10px #39ff14);
         /* For mobile, use a down arrow */
-        content: "\2193";
     }
+
     .arrow-text {
         font-size: 1.2rem;
         color: #fff;
@@ -167,6 +169,7 @@ body {
         font-weight: bold;
         letter-spacing: 0.05em;
     }
+
     @keyframes bounce-vertical {
         0%, 100% { transform: translateY(0);}
         50% { transform: translateY(20px);}
