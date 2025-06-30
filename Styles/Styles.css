@@ -128,7 +128,7 @@ body {
     #pointer-container {
         position: absolute;
         left: 50%;
-        top: 20%;
+        top: 40%;
         transform: translate(-50%, -50%);
         z-index: 10;
         pointer-events: none;
