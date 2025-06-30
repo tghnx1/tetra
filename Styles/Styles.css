@@ -125,6 +125,52 @@ body {
 
 @media (max-width: 940px) {
 
+    #pointer-container {
+        position: absolute;
+        left: 50%;
+        top: 80%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+        pointer-events: none;
+    }
+    #pointer-arrow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        padding: 0.5em 2em 0.5em 1.5em;
+        border-radius: 2em;
+        font-size: 2.5rem;
+        color: #39ff14;
+        text-shadow:
+                0 0 10px #39ff14,
+                0 0 20px #39ff14,
+                0 0 40px #39ff14,
+                0 0 80px #39ff14;
+        box-shadow: 0 0 40px 10px #39ff1440;
+        animation: bounce-vertical 1s infinite;
+        position: relative;
+    }
+    .arrow-symbol {
+        font-size: 3rem;
+        margin-right: 0.7em;
+        filter: drop-shadow(0 0 10px #39ff14);
+        /* For mobile, use a down arrow */
+        content: "\2193";
+    }
+    .arrow-text {
+        font-size: 1.2rem;
+        color: #fff;
+        text-shadow:
+                0 0 10px #39ff14,
+                0 0 20px #39ff14;
+        font-weight: bold;
+        letter-spacing: 0.05em;
+    }
+    @keyframes bounce-vertical {
+        0%, 100% { transform: translateY(0);}
+        50% { transform: translateY(20px);}
+    }
     .notice-text {
         max-width: 700px;
         margin: 0 auto;
@@ -160,8 +206,4 @@ body {
         box-sizing: border-box;
     }
 
-    @keyframes bounce {
-        0%, 100% { transform: translateY(0);}
-        50% { transform: translateY(15px);}
-    }
 }
