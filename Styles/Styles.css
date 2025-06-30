@@ -57,27 +57,10 @@ body {
 }
 
 @media (min-width: 941px) {
-    #overlay-content {
-        position: fixed;
-        top: 20%;
-        right: 0;
-        width: 50%;
-        height: 100vh;
-        background: rgba(0, 0, 0, 0);
-        color: #1bff00; /* Pink */
-        z-index: 20;
-        overflow: auto;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
 
-@media (max-width: 940px) {
     #pointer-container {
         position: absolute;
-        right: 5%;
+        right: 75%;
         top: 50%;
         transform: translateY(-50%);
         display: flex;
@@ -99,7 +82,24 @@ body {
         text-shadow: 0 0 8px #000;
     }
 
+    #overlay-content {
+        position: fixed;
+        top: 20%;
+        right: 0;
+        width: 50%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0);
+        color: #1bff00; /* Pink */
+        z-index: 20;
+        overflow: auto;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
 
+@media (max-width: 940px) {
 
     .notice-text {
         max-width: 700px;
