@@ -88,16 +88,19 @@ body {
     }
     #pointer-arrow {
         font-size: 2.5rem;
-        color: #fff;
+        color: #1bff00;
         margin-right: 0.5em;
         transform: rotate(180deg); /* If using down arrow, rotates it left */
         animation: none; /* Remove bounce for horizontal arrow */
     }
     #pointer-text {
-        color: #fff;
+        color: #1bff00;
         font-size: 1.2rem;
         text-shadow: 0 0 8px #000;
     }
+
+
+
     .notice-text {
         max-width: 700px;
         margin: 0 auto;
