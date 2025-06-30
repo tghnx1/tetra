@@ -63,28 +63,46 @@ body {
         right: 5%;
         top: 50%;
         transform: translateY(-50%);
-        display: flex;
-        flex-direction: row;
-        align-items: center;
         z-index: 10;
         pointer-events: none;
     }
     #pointer-arrow {
-        font-size: 2.5rem;
-        color: #1bff00;
-        margin-right: 0.5em;
-        transform: rotate(180deg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        padding: 0.5em 2em 0.5em 1.5em;
+        border-radius: 2em;
+        font-size: 3rem;
+        color: #39ff14;
+        text-shadow:
+                0 0 10px #39ff14,
+                0 0 20px #39ff14,
+                0 0 40px #39ff14,
+                0 0 80px #39ff14;
+        box-shadow: 0 0 40px 10px #39ff1440;
         animation: bounce-horizontal 1s infinite;
-    }
-    #pointer-text {
-        color: #1bff00;
-        font-size: 1.2rem;
-        text-shadow: 0 0 8px #000;
+        position: relative;
     }
 
+    .arrow-symbol {
+        font-size: 3.5rem;
+        margin-right: 0.7em;
+        filter: drop-shadow(0 0 10px #39ff14);
+    }
+
+    .arrow-text {
+        font-size: 1.5rem;
+        color: #fff;
+        text-shadow:
+                0 0 10px #39ff14,
+                0 0 20px #39ff14;
+        font-weight: bold;
+        letter-spacing: 0.05em;
+    }
     @keyframes bounce-horizontal {
         0%, 100% { transform: translateX(0);}
-        50% { transform: translateX(30px)}
+        50% { transform: translateX(30px);}
     }
 
     #overlay-content {
