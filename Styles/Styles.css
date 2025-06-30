@@ -74,7 +74,7 @@ body {
         color: #1bff00;
         margin-right: 0.5em;
         transform: rotate(180deg); /* If using down arrow, rotates it left */
-        animation: none; /* Remove bounce for horizontal arrow */
+        animation: bounce 1s infinite;
     }
     #pointer-text {
         color: #1bff00;
@@ -96,6 +96,11 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    @keyframes bounce-horizontal {
+        0%, 100% { transform: translateX(0);}
+        50% { transform: translateX(30px);}
     }
 }
 
@@ -135,9 +140,9 @@ body {
         overflow: auto;
         box-sizing: border-box;
     }
-}
 
-@keyframes bounce {
-    0%, 100% { transform: translateY(0);}
-    50% { transform: translateY(15px);}
+    @keyframes bounce {
+        0%, 100% { transform: translateY(0);}
+        50% { transform: translateY(15px);}
+    }
 }
