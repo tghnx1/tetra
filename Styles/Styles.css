@@ -60,7 +60,7 @@ body {
 
     #pointer-container {
         position: absolute;
-        right: 75%;
+        right: 5%;
         top: 50%;
         transform: translateY(-50%);
         display: flex;
@@ -73,13 +73,18 @@ body {
         font-size: 2.5rem;
         color: #1bff00;
         margin-right: 0.5em;
-        transform: rotate(180deg); /* If using down arrow, rotates it left */
-        animation: bounce 1s infinite;
+        transform: rotate(180deg);
+        animation: bounce-horizontal 1s infinite;
     }
     #pointer-text {
         color: #1bff00;
         font-size: 1.2rem;
         text-shadow: 0 0 8px #000;
+    }
+
+    @keyframes bounce-horizontal {
+        0%, 100% { transform: translateX(0) rotate(180deg);}
+        50% { transform: translateX(30px) rotate(180deg);}
     }
 
     #overlay-content {
@@ -98,10 +103,6 @@ body {
         align-items: center;
     }
 
-    @keyframes bounce-horizontal {
-        0%, 100% { transform: translateX(0);}
-        50% { transform: translateX(30px);}
-    }
 }
 
 @media (max-width: 940px) {
