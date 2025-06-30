@@ -75,6 +75,29 @@ body {
 }
 
 @media (max-width: 940px) {
+    #pointer-container {
+        position: absolute;
+        right: 5%;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        z-index: 10;
+        pointer-events: none;
+    }
+    #pointer-arrow {
+        font-size: 2.5rem;
+        color: #fff;
+        margin-right: 0.5em;
+        transform: rotate(180deg); /* If using down arrow, rotates it left */
+        animation: none; /* Remove bounce for horizontal arrow */
+    }
+    #pointer-text {
+        color: #fff;
+        font-size: 1.2rem;
+        text-shadow: 0 0 8px #000;
+    }
     .notice-text {
         max-width: 700px;
         margin: 0 auto;
@@ -113,8 +136,8 @@ body {
 
 #pointer-container {
     position: absolute;
-    left: 50%;
-    top: 15%;
+    left: 5%;
+    top: 50%;
     transform: translateX(-50%);
     display: flex;
     flex-direction: column;
