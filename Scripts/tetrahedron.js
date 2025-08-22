@@ -19,7 +19,7 @@ const uvs = [
 // Load textures
 const loader = new THREE.TextureLoader();
 const textures = [
-    loader.load('./Media/test.png'),
+    loader.load('./Media/holyberg.png'),
     loader.load('./Media/BABBIBRUN.png'),
     loader.load('./Media/ATMOS.png'),
     loader.load('./Media/HOLYWANDERER.png'),
