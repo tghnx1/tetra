@@ -210,3 +210,22 @@ body {
     }
 
 }
+
+.artist-footer {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    margin: 2em 0 1em 0;
+}
+.footer-link {
+    color: #39ff14;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    font-size: 1.1em;
+    transition: color 0.2s;
+}
+.footer-link:hover {
+    color: #fff;
+}
